@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class LRUCache {
 	
-	private Map<Integer, CacheEntry> cache;
+	private Map<Integer, CacheEntry> cache = null;
 	int capacity = 1;
 	
 	private int youngestAge = 0;
