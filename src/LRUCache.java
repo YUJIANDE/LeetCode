@@ -9,7 +9,7 @@ public class LRUCache {
 	private Map<Integer, CacheEntry> cache;
 	int capacity = 1;
 	
-	private int youngestAge = 0;
+	private int youngestAge = 0; //this is the 'key' feature
     
     public LRUCache(int capacity) {
         cache = new HashMap<Integer, CacheEntry>(capacity);
