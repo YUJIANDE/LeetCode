@@ -23,7 +23,7 @@ public class LRUCache {
     		throw new RuntimeException("EMPTY Cache!");
     	}
     	int oldest = Integer.MIN_VALUE;
-    	int oldestKey = 0;
+    	int oldestKey = 0; // init is useless actually
     	Set<Entry<Integer, CacheEntry>> set = cache.entrySet();
     	Iterator<Entry<Integer, CacheEntry>> it = set.iterator();
     	while (it.hasNext()) {
