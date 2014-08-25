@@ -19,6 +19,7 @@ public class LRUCache {
     }
     
     private int getOldest(){
+    	// capacity 0 is invalid
     	if(cache.size() <= 0) {
     		throw new RuntimeException("EMPTY Cache!");
     	}
