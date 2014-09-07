@@ -13,10 +13,6 @@ public class Test {
 	void testReverseWords(){
 		System.out.println("result: [" + ReverseWords.reverseWords(" a b  cv j") + "]");
 	}
-	/**
-	 *  ["2", "1", "+", "3", "*"] -> ((2 + 1) * 3) -> 9
-  ["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6
-	 */
 	
 	void testEvalRPN(String[] tokens){
 		System.out.println(new EvalRPN().evalRPN(tokens));
