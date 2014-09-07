@@ -1,4 +1,5 @@
 
+
 public class Test {
 
 	public static void main(String[] args) {
@@ -7,7 +8,17 @@ public class Test {
 //		new Test().testLRUCache();
 //		int[] input = {1, 2};
 //		new Test().testReorderList(input);
-		new Test().testCandy();
+	//	new Test().testCandy();
+//		List<String[]> r = new NQueens().solveNQueens(9);
+//		
+//		for(int i=0;i<r.size();i++) {
+//			System.out.println(i+1+":");
+//			String[] matrix = r.get(i);
+//			for(int j=0;j<matrix.length;j++)
+//				System.out.println(matrix[j]);
+//		}
+		
+		
 	}
 	
 	void testReverseWords(){
