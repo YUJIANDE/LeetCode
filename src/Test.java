@@ -1,5 +1,6 @@
 
 
+
 public class Test {
 
 	public static void main(String[] args) {
@@ -18,7 +19,13 @@ public class Test {
 //				System.out.println(matrix[j]);
 //		}
 		
+//		List<String> r = new RestoreIPAddress().restoreIpAddresses("010010");
+//		
+//		for(int i=0;i<r.size();i++) {
+//			System.out.println(r.get(i));
+//		}
 		
+		System.out.println(new ValidParentheses().isValid("()"));		
 	}
 	
 	void testReverseWords(){
