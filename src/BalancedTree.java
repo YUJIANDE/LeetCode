@@ -13,7 +13,6 @@ public class BalancedTree {
 				Math.abs(left - right) <=1;
 	}
 	
-	
 	private int depth(TreeNode root) {
 		if(root == null) {
 			return 0;
