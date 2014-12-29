@@ -8,23 +8,16 @@ public class InOrderTranversBST {
 		List<Integer> result = new ArrayList<Integer>();
 		Stack<TreeNode> stack = new Stack<TreeNode>();
 		TreeNode node =root;
-		stack.push(node);
-		while(stack.isEmpty()) {
-			if(node.left != null) {
-				stack.push(node.left);
-				node = node.left;
+
+		while(!stack.isEmpty() || node != null) {
+			if(node != null) {
+				stack.push(node);
+				node =node.left;
 			}else {
-				result.add(node.val);
-				if(node.right != null) {
-					stack.push(node.right);
-					node = node.right;
-				}else {
-					node = stack.pop();
-					result.add(node.val);
-					node = node.right;
-				}
-			}	
-			
+				TreeNode pop = stack.pop();
+				result.add(pop.val);
+				node = pop.right;
+			}
 		}
 		
 		return result;

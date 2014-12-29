@@ -25,7 +25,8 @@ public class Test {
 //			System.out.println(r.get(i));
 //		}
 		
-		System.out.println(new ValidParentheses().isValid("()"));		
+//		System.out.println(new ValidParentheses().isValid("()"));		
+		new Test().testDecodeWays();
 	}
 	
 	void testReverseWords(){
@@ -67,4 +68,8 @@ public class Test {
 		System.out.println(candy.candy(input));
 	}
 
+	void testDecodeWays() {
+		System.out.println(new DecodeWays().numDecodings("123"));
+	}
+	
 }
